@@ -1,0 +1,162 @@
+//! Font
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #93BFCF;
+  color: #123;
+}
+
+.title {
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #123;
+}
+
+.input-form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  .form {
+    &-group {
+      display: flex;
+      flex-direction: column;
+      background: indianred;
+      padding: 1rem;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      label {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .form-control {
+        border: none;
+        padding: 0.8em;
+        border-radius: 5px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    &-submit {
+      text-align: center;
+      background: indianred;
+      padding: 0 1em 1em;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      button {
+        padding: 0.8em;
+        border: 2px solid transparent;
+        border: 2px solid transparent;
+        background: #123;
+        color: indianred;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background: indianred;
+          color: #123;
+          border: 2px solid #123;
+          transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+      }
+    }
+  }
+}
+
+.noteList {
+  padding: 2em;
+  .item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    .empty {
+      padding: 1rem 0 0;
+      font-size: 1.5rem;
+    }
+    .item {
+      flex: 1 1 400px;
+      padding: 1em;
+      background: cornsilk;
+      border-radius: 5px;
+      p {
+        margin: 1em 0;
+      }
+      .actions {
+        display: flex;
+        gap: 0.5em;
+
+        button {
+          padding: 0.3em;
+          border: 2px solid transparent;
+          border: 2px solid transparent;
+          background: #123;
+          color: cornsilk;
+          border-radius: 5px;
+          cursor: pointer;
+          &:hover {
+            background: cornsilk;
+            color: #123;
+            border: 2px solid #123;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+        }
+      }
+    }
+  }
+}
+
+.completeList {
+  padding: 2em;
+  .complete-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    .empty {
+      padding: 1rem 0 0;
+      font-size: 1.5rem;
+    }
+    .item {
+      flex: 1 1 400px;
+      padding: 1em;
+      background: cadetblue;
+      border-radius: 5px;
+      p {
+        margin: 1em 0;
+      }
+      .actions {
+        display: flex;
+        gap: 0.5em;
+
+        button {
+          padding: 0.3em;
+          border: 2px solid transparent;
+          border: 2px solid transparent;
+          background: #123;
+          color: cadetblue;
+          border-radius: 5px;
+          cursor: pointer;
+          &:hover {
+            background: cadetblue;
+            color: #123;
+            border: 2px solid #123;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+        }
+      }
+    }
+  }
+}
